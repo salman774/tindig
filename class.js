@@ -13,5 +13,8 @@ class Dogsdata {
   </div>`;
   }
 }
+// addlikeornope(){
+
+// }
 
 export { Dogsdata };
