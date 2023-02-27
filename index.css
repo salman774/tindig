@@ -1,0 +1,49 @@
+body {
+  width: 60%;
+  height: auto;
+  margin: auto;
+}
+header {
+  padding: 0;
+  margin: auto;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* htmldogsdata that is render throung class.js */
+.htmldogsdata {
+  position: relative;
+}
+.htmldogsdata img {
+  width: 100%;
+  height: 65%;
+  border-radius: 5%;
+}
+
+.htmldogsdata p {
+  position: absolute;
+  top: 323px;
+  color: white;
+  font-weight: bolder;
+}
+
+.htmldogsdata span {
+  position: absolute;
+  top: 313px;
+  color: white;
+  font-weight: bolder;
+}
+
+.button {
+  display: flex;
+  justify-content: space-around;
+}
+.button button {
+  border-radius: 50%;
+  padding: 10px;
+  border: none;
+}
