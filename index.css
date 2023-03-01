@@ -19,7 +19,7 @@ header {
   position: relative;
   margin-top: 10px;
 }
-.htmldogsdata img {
+.htmldogsdata img:nth-of-type(1) {
   width: 100%;
   height: 380px;
   border-radius: 5%;
@@ -54,4 +54,58 @@ header {
 }
 .button span:nth-of-type(1) button:hover {
   background-color: rgb(224, 137, 137);
+}
+
+#getlikedimage {
+  display: none;
+  height: 25%;
+  width: 30%;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  transition-duration: 0.4s;
+  animation-name: animate-click;
+  animation-duration: 1s;
+  transform: rotate(-20deg);
+}
+
+#getunlikedimage {
+  display: none;
+  height: 25%;
+  width: 30%;
+  position: absolute;
+  top: 10px;
+  left: 150px;
+  transition-duration: 0.4s;
+  animation-name: animate-click;
+  animation-duration: 1s;
+  transform: rotate(-20deg);
+}
+
+.animate-button:active {
+  animation-name: animate-click;
+  animation-duration: 1s;
+}
+
+@keyframes animate-click {
+  0% {
+    transform: scale(1);
+    background-color: #4caf50;
+  }
+  25% {
+    transform: scale(1.2);
+    background-color: #f44336;
+  }
+  50% {
+    transform: scale(0.8);
+    background-color: #2196f3;
+  }
+  75% {
+    transform: scale(1.1);
+    background-color: #ffc107;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #4caf50;
+  }
 }
