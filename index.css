@@ -46,7 +46,6 @@ header {
 .button button {
   border-radius: 50%;
   padding: 10px;
-  border: none;
   background-color: white;
 }
 .button span:nth-of-type(2) button:hover {
