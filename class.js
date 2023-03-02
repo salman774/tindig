@@ -17,10 +17,14 @@ class Dogsdata {
   likefunction() {
     document.getElementById("getlikedimage").style.display = "block";
     document.getElementById("getunlikedimage").style.display = "none";
+    this.hasBeenLiked = true;
+    this.hasBeenSwiped = true;
   }
   unlikefunction() {
     document.getElementById("getlikedimage").style.display = "none";
     document.getElementById("getunlikedimage").style.display = "block";
+    this.hasBeenSwiped = true;
+    this.hasBeenLiked = true;
   }
 }
 
