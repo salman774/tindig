@@ -4,7 +4,9 @@ class Dogsdata {
   }
   gethtmlofdogsdata() {
     const { name, avatar, age, bio } = this;
-    return `<div class = "htmldogsdata">   
+    return `
+  
+    <div id="box" class = "htmldogsdata">   
     <img src="${avatar}" alt="dogiee" />
     <div>
     <span> ${name},${age} </span>

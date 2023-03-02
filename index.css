@@ -117,3 +117,19 @@ header {
     background-color: #4caf50;
   }
 }
+
+.box {
+  animation: zoom-in 1s ease;
+  transform-origin: center;
+}
+@keyframes zoom-in {
+  0% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

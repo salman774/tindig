@@ -48,6 +48,8 @@ const newdogarray = () => {
       console.log(arrayholdingdog);
       arrayholdingdog.gethtmlofdogsdata();
       button = true;
+      const box = document.getElementById("box");
+      box.classList.add("box");
     }
   } else {
     button = true;
@@ -58,6 +60,7 @@ const newdogarray = () => {
   }
   setTimeout(() => {
     button = false;
+
     render();
   }, 2000);
 };
