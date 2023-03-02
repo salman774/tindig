@@ -25,6 +25,14 @@ class Dogsdata {
     this.hasBeenSwiped = true;
     this.hasBeenLiked = true;
   }
+
+  lastmessage() {
+    document.body.innerHTML = `<div class="last-message">
+    <h1>End of profile</h1>
+    <p>you have viewed all three profile</p>
+    <p>come back soon for more dogs</p>
+    </div>`;
+  }
 }
 
 export { Dogsdata };

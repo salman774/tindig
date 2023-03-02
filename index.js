@@ -50,7 +50,11 @@ const newdogarray = () => {
       button = true;
     }
   } else {
-    console.log("array ended");
+    button = true;
+    setTimeout(() => {
+      arrayholdingdog.lastmessage();
+      console.log("array ended");
+    }, 2000);
   }
   setTimeout(() => {
     button = false;
