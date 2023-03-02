@@ -24,16 +24,7 @@ render();
 const like = () => {
   arrayholdingdog.likefunction();
 
-  for (let i = 0; i < 1; i++) {
-    arrayholdingdog = [];
-    let array = arrayofdogs.shift();
-    arrayholdingdog.push(array);
-    arrayholdingdog = arrayholdingdog[0];
-    console.log(arrayholdingdog);
-    arrayholdingdog.gethtmlofdogsdata();
-  }
-  render();
-
+  newdogarray();
   // console.log(arrayholdingdog.hasBeenLiked);
   // console.log(arrayholdingdog.hasBeenSwiped);
 };
@@ -46,3 +37,18 @@ const unlike = () => {
 
 document.getElementById("unliked").addEventListener("click", like);
 document.getElementById("liked").addEventListener("click", unlike);
+
+const newdogarray = () => {
+  for (let i = 0; i < 1; i++) {
+    arrayholdingdog = [];
+    let array = arrayofdogs.shift();
+    arrayholdingdog.push(array);
+    arrayholdingdog = arrayholdingdog[0];
+    console.log(arrayholdingdog);
+    arrayholdingdog.gethtmlofdogsdata();
+  }
+
+  setTimeout(() => {
+    render();
+  }, 2000);
+};
