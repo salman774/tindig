@@ -18,7 +18,6 @@ class Dogsdata {
     document.getElementById("getlikedimage").style.display = "block";
     document.getElementById("getunlikedimage").style.display = "none";
     this.hasBeenLiked = true;
-    this.hasBeenSwiped = true;
   }
   unlikefunction() {
     document.getElementById("getlikedimage").style.display = "none";
