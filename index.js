@@ -43,7 +43,7 @@ const newdogarray = () => {
     for (let i = 0; i < 1; i++) {
       arrayholdingdog = [];
       let array = arrayofdogs.shift();
-      arrayholdingdog.push(array);
+      arrayholdingdog.push(array);  
       arrayholdingdog = arrayholdingdog[0];
       console.log(arrayholdingdog);
       arrayholdingdog.gethtmlofdogsdata();
